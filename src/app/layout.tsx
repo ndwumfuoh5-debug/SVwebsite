@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Scalator X Ventures",
   description: "Sports. Health. Longevity.",
-  icons: "https://vybe.build/vybe-icon.svg",
+  icons: "https://www.scalatorx.com/favicon.ico",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
