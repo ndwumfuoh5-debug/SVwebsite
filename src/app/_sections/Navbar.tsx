@@ -50,18 +50,10 @@ export function Navbar() {
     { label: "Contact", id: "contact" },
   ];
 
-  const navBg = isDark
-    ? "transparent"
-    : "rgba(255,255,255,0.97)";
-
-  const navShadow = isDark ? "none" : "0 1px 12px rgba(0,0,0,0.08)";
-  const linkColor = isDark ? "text-white/90 hover:text-white" : "text-[#0A1540]/80 hover:text-[#0A1540]";
-  const mobileIconColor = isDark ? "text-white" : "text-[#0A1540]";
-
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      style={{ background: navBg, boxShadow: navShadow }}
+      style={{ background: "rgba(255,255,255,0.98)", boxShadow: "0 1px 12px rgba(0,0,0,0.08)" }}
     >
       <div className="w-full px-4 lg:px-10">
         <div className="flex items-center justify-between h-24">
@@ -77,7 +69,7 @@ export function Navbar() {
               className="h-24 w-auto object-contain"
               style={{
                 background: "transparent",
-                mixBlendMode: isDark ? "screen" : "multiply",
+                mixBlendMode: "multiply",
               }}
             />
           </button>
@@ -88,7 +80,7 @@ export function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className={`relative text-sm font-semibold tracking-wide transition-colors duration-200 group ${linkColor}`}
+                className="relative text-sm font-semibold tracking-wide transition-colors duration-200 group text-[#0A1540]/80 hover:text-[#0A1540]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C0272D] rounded-full transition-all duration-300 group-hover:w-full" />
@@ -98,7 +90,7 @@ export function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className={`md:hidden p-1 transition-colors duration-300 ${mobileIconColor}`}
+            className="md:hidden p-1 transition-colors duration-300 text-[#0A1540]"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -110,23 +102,17 @@ export function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div
-          className="md:hidden border-t px-6 py-4 flex flex-col gap-1 transition-all duration-300"
+          className="md:hidden border-t px-6 py-4 flex flex-col gap-1"
           style={{
-            background: isDark ? "rgba(5,15,50,0.92)" : "rgba(255,255,255,0.97)",
-            backdropFilter: "blur(16px)",
-            WebkitBackdropFilter: "blur(16px)",
-            borderColor: isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)",
+            background: "rgba(255,255,255,0.98)",
+            borderColor: "rgba(0,0,0,0.08)",
           }}
         >
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className={`text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left ${
-                isDark
-                  ? "text-white/90 hover:text-white hover:bg-white/10"
-                  : "text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
-              }`}
+              className="text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
             >
               {link.label}
             </button>
