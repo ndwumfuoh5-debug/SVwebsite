@@ -228,7 +228,7 @@ export function HeroSection() {
 
         {/* Main headline */}
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1.05] text-white w-full"
+          className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1.05] text-white w-full"
           style={{
             fontFamily: "'Inter', 'DM Sans', system-ui, sans-serif",
             fontWeight: 400,
