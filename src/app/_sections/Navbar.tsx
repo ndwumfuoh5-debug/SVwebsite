@@ -55,7 +55,7 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{ background: "rgba(255,255,255,0.98)", boxShadow: "0 1px 12px rgba(0,0,0,0.08)" }}
     >
-      <div className="w-full px-4 lg:px-10">
+      <div className="w-full px-2 lg:px-6">
         <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <button
