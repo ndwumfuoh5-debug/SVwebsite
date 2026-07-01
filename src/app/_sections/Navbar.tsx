@@ -56,7 +56,7 @@ export function Navbar() {
       style={{ background: "rgba(255,255,255,0.98)", boxShadow: "0 1px 12px rgba(0,0,0,0.08)" }}
     >
       <div className="w-full px-4 lg:px-10">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -66,7 +66,7 @@ export function Navbar() {
             <img
               src="https://res.cloudinary.com/drnmfkzgx/image/upload/e_background_removal/e_trim/f_png/PastedGraphic-4_2_pmh44r"
               alt="Scalator Ventures"
-              className="h-24 w-auto object-contain"
+              className="h-28 w-auto object-contain"
               style={{
                 background: "transparent",
                 mixBlendMode: "multiply",
@@ -80,7 +80,7 @@ export function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className="relative text-sm font-semibold tracking-wide transition-colors duration-200 group text-[#0A1540]/80 hover:text-[#0A1540]"
+                className="relative text-base font-semibold tracking-wide transition-colors duration-200 group text-[#0A1540]/80 hover:text-[#0A1540]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C0272D] rounded-full transition-all duration-300 group-hover:w-full" />
@@ -112,7 +112,7 @@ export function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className="text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
+              className="text-base font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
             >
               {link.label}
             </button>
