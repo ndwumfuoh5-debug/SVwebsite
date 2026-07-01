@@ -80,7 +80,7 @@ export function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className="relative text-base font-semibold tracking-wide transition-colors duration-200 group text-[#0A1540]/80 hover:text-[#0A1540]"
+                className="relative text-lg font-semibold tracking-wide transition-colors duration-200 group text-[#0A1540]/80 hover:text-[#0A1540]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C0272D] rounded-full transition-all duration-300 group-hover:w-full" />
@@ -112,7 +112,7 @@ export function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className="text-base font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
+              className="text-lg font-semibold px-3 py-2 rounded-lg transition-all duration-200 text-left text-[#0A1540]/80 hover:text-[#0A1540] hover:bg-black/5"
             >
               {link.label}
             </button>
