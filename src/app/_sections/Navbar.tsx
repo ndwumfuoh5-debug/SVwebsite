@@ -66,7 +66,7 @@ export function Navbar() {
             <img
               src="https://res.cloudinary.com/drnmfkzgx/image/upload/e_background_removal/e_trim/f_png/PastedGraphic-4_2_pmh44r"
               alt="Scalator Ventures"
-              className="h-28 w-auto object-contain"
+              className="h-20 w-auto object-contain"
               style={{
                 background: "transparent",
                 mixBlendMode: "multiply",
