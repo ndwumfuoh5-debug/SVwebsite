@@ -56,7 +56,7 @@ export function Navbar() {
       style={{ background: "rgba(255,255,255,0.98)", boxShadow: "0 1px 12px rgba(0,0,0,0.08)" }}
     >
       <div className="w-full px-4 lg:px-10">
-        <div className="flex items-center justify-between h-32 pb-2">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -66,7 +66,7 @@ export function Navbar() {
             <img
               src="https://res.cloudinary.com/drnmfkzgx/image/upload/e_background_removal/e_trim/f_png/PastedGraphic-4_2_pmh44r"
               alt="Scalator Ventures"
-              className="h-24 w-auto object-contain"
+              className="h-28 w-auto object-contain"
               style={{
                 background: "transparent",
                 mixBlendMode: "multiply",
